@@ -1,6 +1,10 @@
 import React from "react";
 import ReactDOM from 'react-dom';
+import Counter from "./components/counter";
+import Button from './components/button'
+import App from './App'
 
-const element = <h1>Hello World</h1>
-console.dir(element);
-console.log('hello');
+
+
+
+ReactDOM.render(<App />, document.getElementById('root'))

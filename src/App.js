@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, { Component } from 'react';
+import Button from './components/button'
+class App extends Component {
+  state = {
+    name: ["btn-primary m-2", 'btn-warning m-2', 'btn-danger m-2']
+  }
+
+  render() {
+    return <ul>
+      {this.state.name.map(title => {
+        return <Button key={title} className={title}>{title}</Button>
+      })}
+    </ul>
+  }
 }
 
 export default App;

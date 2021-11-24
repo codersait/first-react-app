@@ -15,6 +15,6 @@
   - Tables
   - Forms
   - Routing
-  - HTTP Services
   - Auth
+  - HTTP Services
   - Deployment
